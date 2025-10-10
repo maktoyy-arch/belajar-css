@@ -15,5 +15,44 @@
     <img src="gambar/foto1.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto2.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto3.png" alt="Foto Romantis" class="foto-romantis">
+        <div class="musik-player">
+        <button id="playButton">▶️ Play Music</button>
+    </div>
+
+    <audio id="lagu" loop>
+        <source src="musik/mylove.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const lagu = document.getElementById('lagu');
+        const btn = document.getElementById('playButton');
+        let isPlaying = false;
+
+        // fungsi fade-in volume
+        function fadeIn(audio) {
+            audio.volume = 0;
+            let vol = 0;
+            const interval = setInterval(() => {
+                if (vol < 1) {
+                    vol += 0.02;
+                    audio.volume = vol;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 100);
+        }
+
+        btn.addEventListener('click', () => {
+            if (!isPlaying) {
+                lagu.play();
+                fadeIn(lagu);
+                btn.textContent = '⏸ Pause Music';
+            } else {
+                lagu.pause();
+                btn.textContent = '▶️ Play Music';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
 </body>
 </html>
