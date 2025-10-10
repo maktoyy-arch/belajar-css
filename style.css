@@ -168,3 +168,18 @@ button:hover {
         opacity: 0;
     }
 }
+@keyframes naik {
+  from { transform: translateY(100vh); opacity: 1; }
+  to { transform: translateY(-10vh); opacity: 0; }
+}
+body {
+  background-image: url('gambar/latar.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+body {
+  background-image: url('gambar/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
