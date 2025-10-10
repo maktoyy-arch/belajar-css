@@ -55,13 +55,14 @@
 
 <script>
 const pesan = [
-    "Pon cantik banget hari ini 😘",
+    "Pon cantik setiap hari 😘",
     "Yoyyoo selalu mikirin Pon 💖",
     "Jangan lupa makan ya sayang~ 🍽️",
     "I love you more every day, Pon 💞",
     "Kita sama-sama terus yaa sayangg😚",
     "You're my everything🤗",
-    "Yoyyoo kangen pon😩"
+    "Yoyyoo kangen pon😩",
+    "Yoyyoo gamau jauh-jauh dari pon🥹"
 ];
 function pesanRandom() {
     document.getElementById('pesan').textContent =
@@ -73,6 +74,18 @@ function pesanRandom() {
     <img src="gambar/foto1.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto2.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto3.png" alt="Foto Romantis" class="foto-romantis">
-   
+   <script>
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.textContent = '💖';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+}
+setInterval(createHeart, 300);
+</script>
+
 </body>
 </html>
