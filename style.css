@@ -100,7 +100,7 @@ p {
 }
 .musik-player button {
     background: #ff5f9e;
-    color: white;
+    color: rgb(247, 0, 210);
     font-size: 1.1em;
     padding: 10px 25px;
     border: none;
