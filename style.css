@@ -1,25 +1,50 @@
+/* Body dan layout umum */
 body {
-    background-color: #222;
-    color: rgb(5, 1, 20);
+    background-color: #222; /* warna gelap nyaman */
+    color: #fff;            /* teks putih */
     font-family: Arial, sans-serif;
     text-align: center;
+    padding: 20px;
+    line-height: 1.6;
 }
 
+/* Judul */
 h1 {
     color: rgb(253, 4, 179);
-    font-size: 2.1em;
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
+/* Paragraf */
 p {
-    color: #1eff00;
+    color: #ff00b3;
     font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
 }
 
+/* Gambar romantis */
 .foto-romantis {
     width: 250px;
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 40px;
     box-shadow: 0 0 20px hotpink;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efek hover pada foto */
+.foto-romantis:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px deeppink;
+}
 
+/* Optional: buat teks responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5em; }
+    p { font-size: 1em; }
+    .foto-romantis { width: 200px; }
+}
