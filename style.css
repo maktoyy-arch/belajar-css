@@ -22,82 +22,6 @@ p {
     max-width: 700px;
     margin: 0 auto 20px auto;
 }
-
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
 .musik-player button {
     background: #ff5f9e;
     color: rgb(247, 0, 210);
@@ -113,4 +37,79 @@ p {
 .musik-player button:hover {
     background: #ff2b7a;
     transform: scale(1.05);
+}
+/* Gambar romantis */
+.foto-romantis {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px hotpink;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada foto */
+.foto-romantis:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px deeppink;
+}
+
+/* Optional: buat teks responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5em; }
+    p { font-size: 1em; }
+    .foto-romantis { width: 200px; }
+}
+/* Gambar romantis */
+.foto-romantis {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px hotpink;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada foto */
+.foto-romantis:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px deeppink;
+}
+
+/* Optional: buat teks responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5em; }
+    p { font-size: 1em; }
+    .foto-romantis { width: 200px; }
+}
+/* Gambar romantis */
+.foto-romantis {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px hotpink;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada foto */
+.foto-romantis:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px deeppink;
+}
+
+/* Optional: buat teks responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5em; }
+    p { font-size: 1em; }
+    .foto-romantis { width: 200px; }
 }
