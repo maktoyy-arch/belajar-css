@@ -38,6 +38,22 @@ p {
     background: #ff2b7a;
     transform: scale(1.05);
 }
+button {
+    background: #ff85a2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4072;
+    transform: scale(1.05);
+}
+
 /* Gambar romantis */
 .foto-romantis {
     width: 250px;

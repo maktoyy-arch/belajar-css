@@ -10,6 +10,7 @@
     <h1>Hallloww sayangkuuuu 😘😘😘</h1>
     <p>yoyyoo benar-benar secinta itu sama pon , yoyyoo gabakal pernah bisa ninggalin pon, justru yoyyoo takut malah nanti pon yang ninggalin yoyyoo , Nanti kalau ada apa-apa cerita yaa sayangg, yoyyoo gamau pon pendam sendiri , kan sekarang udah ada yoyyoo , yoyyo akan selalu support pon , i will always stay by your side, no matter what the obstacle is , i will always love you sayangg🥰🥰🥰                                 #segudang_cinta_dari_yoyyoo😘
     </p>
+    
          <div class="musik-player">
         <button id="playButton">▶️ Play Music</button>
     </div>
@@ -49,6 +50,25 @@
             isPlaying = !isPlaying;
         });
     </script>
+    <button onclick="pesanRandom()">💌 Klik aku</button>
+<p id="pesan"></p>
+
+<script>
+const pesan = [
+    "Pon cantik banget hari ini 😘",
+    "Yoyyoo selalu mikirin Pon 💖",
+    "Jangan lupa makan ya sayang~ 🍽️",
+    "I love you more every day, Pon 💞",
+    "Kita sama-sama terus yaa sayangg😚",
+    "You're my everything🤗",
+    "Yoyyoo kangen pon😩"
+];
+function pesanRandom() {
+    document.getElementById('pesan').textContent =
+        pesan[Math.floor(Math.random() * pesan.length)];
+}
+</script>
+
     <!-- Tambahkan foto -->
     <img src="gambar/foto1.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto2.png" alt="Foto Romantis" class="foto-romantis">
