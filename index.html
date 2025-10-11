@@ -12,7 +12,7 @@
     </p>
     
          <div class="musik-player">
-        <button id="playButton">▶️ Play Music</button>
+        <button id="playButton">▶ Play Music</button>
     </div>
 
     <audio id="lagu" loop>
@@ -45,7 +45,7 @@
                 btn.textContent = '⏸ Pause Music';
             } else {
                 lagu.pause();
-                btn.textContent = '▶️ Play Music';
+                btn.textContent = '▶ Play Music';
             }
             isPlaying = !isPlaying;
         });
@@ -57,12 +57,24 @@
 const pesan = [
     "Pon cantik setiap hari 😘",
     "Yoyyoo selalu mikirin Pon 💖",
-    "Jangan lupa makan ya sayang~ 🍽️",
+    "Jangan lupa makan ya sayang~ 🍽",
     "I love you more every day, Pon 💞",
     "Kita sama-sama terus yaa sayangg😚",
     "You're my everything🤗",
     "Yoyyoo kangen pon😩",
-    "Yoyyoo gamau jauh-jauh dari pon🥹"
+    "Yoyyoo gamau jauh-jauh dari pon🥹",
+    "Te amo💘🐤🌸",
+    "I love you ❤️✨",
+    "Je t’aime 💞🍭🌺",
+    "Ik hou van jou 💕🌹",
+    "Jag älskar dig 💓🌸",
+    "Jeg elsker deg 💞🌷",
+    "Я тебя люблю 💗🌹",
+    "Wǒ ài nǐ💖🌸",
+    "Aishiteru💞🌷",
+    "Saranghae💗🌹",
+    "mahal kita🐶💖"
+
 ];
 function pesanRandom() {
     document.getElementById('pesan').textContent =
