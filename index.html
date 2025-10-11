@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loading-screen">
+  <div class="loader">
+      <img src="gambar/gambarkucingloading.jpg" alt="kucing loading" class="kucing">
+      <div class="love">💖</div>
+      <div class="loading-text">
+          <span>Gimme all your love and take mine😾 </span>
+          <span>read this massage carefully my love💞</span>
+          <span>cause it's only yours😽</span>
+      </div>
+  </div>
+</div>
+
     <h1>Hallloww sayangkuuuu 😘😘😘</h1>
     <p>yoyyoo benar-benar secinta itu sama pon , yoyyoo gabakal pernah bisa ninggalin pon, justru yoyyoo takut malah nanti pon yang ninggalin yoyyoo , Nanti kalau ada apa-apa cerita yaa sayangg, yoyyoo gamau pon pendam sendiri , kan sekarang udah ada yoyyoo , yoyyo akan selalu support pon , i will always stay by your side, no matter what the obstacle is , i will always love you sayangg🥰🥰🥰                                 #segudang_cinta_dari_yoyyoo😘
     </p>
@@ -86,6 +98,7 @@ function pesanRandom() {
     <img src="gambar/foto1.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto2.png" alt="Foto Romantis" class="foto-romantis">
     <img src="gambar/foto3.png" alt="Foto Romantis" class="foto-romantis">
+    <img src="gambar/foto4.png" alt="Foto Romantis" class="foto-romantis">
    <script>
 function createHeart() {
     const heart = document.createElement('div');
@@ -109,6 +122,32 @@ function createHeart() {
     setTimeout(() => heart.remove(), 5000);
 }
 setInterval(createHeart, 300);
+</script>
+
+<script>
+    // Biar loading ilang setelah 3 detik
+    setTimeout(() => {
+        document.getElementById('loading-screen').style.display = 'none';
+    }, 15000);
+</script>
+<script>
+  const texts = document.querySelectorAll('.loading-text span');
+  let index = 0;
+
+  function showNextText() {
+    texts.forEach(t => t.style.display = 'none');
+    texts[index].style.display = 'inline-block';
+    index = (index + 1) % texts.length;
+  }
+
+  showNextText();
+  setInterval(showNextText, 5000); // ganti tiap 1.5 detik
+
+  // setelah 4.5 detik, sembunyikan loading
+  setTimeout(() => {
+    document.getElementById('loading-screen').style.display = 'none';
+  }, 15000);
+</script>
 </script>
 </body>
 </html>

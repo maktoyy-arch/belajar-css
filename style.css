@@ -129,6 +129,31 @@ button:hover {
     p { font-size: 1em; }
     .foto-romantis { width: 200px; }
 }
+/* Gambar romantis */
+.foto-romantis {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px hotpink;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada foto */
+.foto-romantis:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px deeppink;
+}
+
+/* Optional: buat teks responsive */
+@media (max-width: 600px) {
+    h1 { font-size: 1.5em; }
+    p { font-size: 1em; }
+    .foto-romantis { width: 200px; }
+}
 .heart {
     position: fixed;
     top: -10px;
@@ -182,4 +207,137 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffd6e0, #ffeaf0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.kucing {
+    width: 200px;
+    animation: zoomIn 2s ease-in-out infinite alternate;
+}
+
+.love {
+    font-size: 35px;
+    opacity: 0;
+    animation: floatLove 2s ease-in-out infinite alternate;
+    margin-top: 10px;
+}
+
+.loading-text {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #ff4f81;
+    font-size: 1.7rem;
+    opacity: 0;
+    animation: fadeText 2s ease-in-out infinite alternate;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.7); }
+    100% { transform: scale(1.1); }
+}
+
+@keyframes floatLove {
+    0% { transform: translateY(10px); opacity: 0; }
+    100% { transform: translateY(-20px); opacity: 1; }
+}
+
+@keyframes fadeText {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+/* 🌸 Loading Screen Full Pink */
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #ffcce5; /* pink lembut full background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+#loading-screen.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 🐱 Kucing animasi zoom */
+.loader .kucing {
+  width: 160px;
+  animation: zoomIn 1.5s ease-in-out infinite alternate;
+}
+
+/* Efek zoom lembut */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* 💕 Love kecil yang bergetar */
+.love {
+  font-size: 2rem;
+  animation: float 1.5s ease-in-out infinite alternate;
+  color: #ff5ca8;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* 🌷 Teks bergantian */
+.loading-text span {
+  display: none;
+  color: #ff4d94;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #fff;
+}
+
+body.loaded #loading-screen {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* efek love di atas loading */
+.love-floating {
+  position: fixed;
+  font-size: 1.5rem;
+  animation: fall 5s linear infinite;
+  pointer-events: none;
+  z-index: 10000; /* di atas loading screen */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
 }
