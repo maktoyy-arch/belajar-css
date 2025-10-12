@@ -1,153 +1,168 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halow Sayangkuu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halow Sayangkuu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loading-screen">
-  <div class="loader">
+
+  <!-- 🌸 Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader">
       <img src="gambar/gambarkucingloading.jpg" alt="kucing loading" class="kucing">
       <div class="love">💖</div>
       <div class="loading-text">
-          <span>Gimme all your love and take mine😾 </span>
-          <span>read this massage carefully my love💞</span>
-          <span>cause it's only yours😽</span>
+        <span>Gimme all your love and take mine😾</span>
+        <span>Read this message carefully my love💞</span>
+        <span>Cause it's only yours😽</span>
       </div>
-  </div>
-</div>
-
-    <h1>Hallloww sayangkuuuu 😘😘😘</h1>
-    <p>yoyyoo benar-benar secinta itu sama pon , yoyyoo gabakal pernah bisa ninggalin pon, justru yoyyoo takut malah nanti pon yang ninggalin yoyyoo , Nanti kalau ada apa-apa cerita yaa sayangg, yoyyoo gamau pon pendam sendiri , kan sekarang udah ada yoyyoo , yoyyo akan selalu support pon , i will always stay by your side, no matter what the obstacle is , i will always love you sayangg🥰🥰🥰                                 #segudang_cinta_dari_yoyyoo😘
-    </p>
-    
-         <div class="musik-player">
-        <button id="playButton">▶ Play Music</button>
     </div>
-
-    <audio id="lagu" loop>
-        <source src="musik/mylove1.mp3" type="audio/mpeg">
+  
+    <!-- 🎵 Audio untuk loading -->
+    <audio id="loading-audio">
+      <source src="musik/meow.mp3" type="audio/mpeg">
     </audio>
+  </div>
 
-    <script>
-        const lagu = document.getElementById('lagu');
-        const btn = document.getElementById('playButton');
-        let isPlaying = false;
+  <!-- 🌷 Konten utama -->
+  <h1>Hallloww sayangkuuuu 😘😘😘</h1>
+  <p>yoyyoo benar-benar secinta itu sama pon, yoyyoo gabakal pernah bisa ninggalin pon,
+     justru yoyyoo takut malah nanti pon yang ninggalin yoyyoo 😭 nanti kalau ada apa-apa cerita yaa sayangg,
+     yoyyoo gamau pon pendam sendiri, kan sekarang udah ada yoyyoo~ i will always stay by your side,
+     no matter what the obstacle is, i will always love you sayangg🥰🥰🥰 #segudang_cinta_dari_yoyyoo😘
+  </p>
 
-        // fungsi fade-in volume
-        function fadeIn(audio) {
-            audio.volume = 75;
-            let vol = 75;
-            const interval = setInterval(() => {
-                if (vol < 1) {
-                    vol += 0.02;
-                    audio.volume = vol;
-                } else {
-                    clearInterval(interval);
-                }
-            }, 100);
-        }
+  <div class="musik-player">
+    <button id="playButton">▶ Play Music</button>
+  </div>
 
-        btn.addEventListener('click', () => {
-            if (!isPlaying) {
-                lagu.play();
-                fadeIn(lagu);
-                btn.textContent = '⏸ Pause Music';
-            } else {
-                lagu.pause();
-                btn.textContent = '▶ Play Music';
-            }
-            isPlaying = !isPlaying;
-        });
-    </script>
-    <button onclick="pesanRandom()">💌 Klik aku</button>
-<p id="pesan"></p>
+  <audio id="lagu" loop>
+    <source src="musik/mylove1.mp3" type="audio/mpeg">
+  </audio>
 
-<script>
-const pesan = [
-    "Pon cantik setiap hari 😘",
-    "Yoyyoo selalu mikirin Pon 💖",
-    "Jangan lupa makan ya sayang~ 🍽",
-    "I love you more every day, Pon 💞",
-    "Kita sama-sama terus yaa sayangg😚",
-    "You're my everything🤗",
-    "Yoyyoo kangen pon😩",
-    "Yoyyoo gamau jauh-jauh dari pon🥹",
-    "Te amo💘🐤🌸",
-    "I love you ❤️✨",
-    "Je t’aime 💞🍭🌺",
-    "Ik hou van jou 💕🌹",
-    "Jag älskar dig 💓🌸",
-    "Jeg elsker deg 💞🌷",
-    "Я тебя люблю 💗🌹",
-    "Wǒ ài nǐ💖🌸",
-    "Aishiteru💞🌷",
-    "Saranghae💗🌹",
-    "mahal kita🐶💖"
+  <button onclick="pesanRandom()">💌 Klik aku</button>
+  <p id="pesan"></p>
 
-];
-function pesanRandom() {
-    document.getElementById('pesan').textContent =
+  <img src="gambar/foto1.png" alt="Foto Romantis" class="foto-romantis">
+  <img src="gambar/foto2.png" alt="Foto Romantis" class="foto-romantis">
+  <img src="gambar/foto3.png" alt="Foto Romantis" class="foto-romantis">
+  <img src="gambar/foto4.png" alt="Foto Romantis" class="foto-romantis">
+
+  <script>
+    // 💞 Audio musik utama
+    const lagu = document.getElementById('lagu');
+    const btn = document.getElementById('playButton');
+    let isPlaying = false;
+
+    btn.addEventListener('click', () => {
+      if (!isPlaying) {
+        lagu.play();
+        btn.textContent = '⏸ Pause Music';
+      } else {
+        lagu.pause();
+        btn.textContent = '▶ Play Music';
+      }
+      isPlaying = !isPlaying;
+    });
+
+    // 💌 Pesan random
+    const pesan = [
+      "Pon cantik setiap hari 😘",
+      "Yoyyoo selalu mikirin Pon 💖",
+      "Jangan lupa makan ya sayang~ 🍽",
+      "I love you more every day, Pon 💞",
+      "Kita sama-sama terus yaa sayangg😚",
+      "You're my everything🤗",
+      "Yoyyoo kangen pon😩",
+      "Yoyyoo gamau jauh-jauh dari pon🥹",
+      "Te amo💘🐤🌸",
+      "I love you ❤✨",
+      "Je t’aime 💞🍭🌺",
+      "Ik hou van jou 💕🌹",
+      "Jag älskar dig 💓🌸",
+      "Jeg elsker deg 💞🌷",
+      "Я тебя люблю 💗🌹",
+      "Wǒ ài nǐ💖🌸",
+      "Aishiteru💞🌷",
+      "Saranghae💗🌹",
+      "mahal kita🐶💖"
+    ];
+
+    function pesanRandom() {
+      document.getElementById('pesan').textContent =
         pesan[Math.floor(Math.random() * pesan.length)];
-}
-</script>
+    }
 
-    <!-- Tambahkan foto -->
-    <img src="gambar/foto1.png" alt="Foto Romantis" class="foto-romantis">
-    <img src="gambar/foto2.png" alt="Foto Romantis" class="foto-romantis">
-    <img src="gambar/foto3.png" alt="Foto Romantis" class="foto-romantis">
-    <img src="gambar/foto4.png" alt="Foto Romantis" class="foto-romantis">
-   <script>
-function createHeart() {
-    const heart = document.createElement('div');
-    heart.classList.add('heart');
-    heart.textContent = '💖';
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.animationDuration = Math.random() * 2 + 3 + 's';
-    document.body.appendChild(heart);
-    setTimeout(() => heart.remove(), 5000);
-}
-setInterval(createHeart, 300);
-</script>
-<script>
-function createHeart() {
-    const heart = document.createElement('div');
-    heart.classList.add('heart');
-    heart.textContent = '🌹';
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.animationDuration = Math.random() * 2 + 3 + 's';
-    document.body.appendChild(heart);
-    setTimeout(() => heart.remove(), 5000);
-}
-setInterval(createHeart, 300);
-</script>
+    // 🌹 Love rain setelah loading selesai
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = Math.random() > 0.5 ? '💖' : '🌹' ;
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
 
-<script>
-    // Biar loading ilang setelah 3 detik
+    // 🐾 Loading animation (teks berganti tiap 5 detik, total 15 detik)
+    const texts = document.querySelectorAll('.loading-text span');
+    let index = 0;
+    function showNextText() {
+      texts.forEach(t => t.style.display = 'none');
+      texts[index].style.display = 'inline-block';
+      index = (index + 1) % texts.length;
+    }
+
+    // mulai loading
+    const loadingAudio = document.getElementById('loading-audio');
+    loadingAudio.play().catch(() => {}); // auto play (kadang butuh interaksi user)
+    showNextText();
+    const textInterval = setInterval(showNextText, 5000);
+
+    // 15 detik kemudian: stop audio, matikan loading, mulai love rain
     setTimeout(() => {
-        document.getElementById('loading-screen').style.display = 'none';
+      document.getElementById('loading-screen').style.display = 'none';
+      loadingAudio.pause();
+      clearInterval(textInterval);
+      setInterval(createHeart, 300);
     }, 15000);
-</script>
-<script>
-  const texts = document.querySelectorAll('.loading-text span');
-  let index = 0;
+  </script>
+  <script>
+window.addEventListener("load", () => {
+  const audio = document.getElementById("loading-audio");
 
-  function showNextText() {
-    texts.forEach(t => t.style.display = 'none');
-    texts[index].style.display = 'inline-block';
-    index = (index + 1) % texts.length;
-  }
+  // coba autoplay
+  audio.volume = 0.5; // biar gak terlalu kencang
+  audio.play().catch(() => {
+    // kalau autoplay gagal, munculkan tombol kecil buat nyalain suara
+    const btn = document.createElement("button");
+    btn.textContent = "🔊 Nyalain Musik Loading";
+    Object.assign(btn.style, {
+      position: "fixed",
+      bottom: "20px",
+      left: "50%",
+      transform: "translateX(-50%)",
+      padding: "10px 20px",
+      borderRadius: "20px",
+      border: "none",
+      background: "#ff66b2",
+      color: "white",
+      fontSize: "14px",
+      boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+      cursor: "pointer",
+      zIndex: "9999"
+    });
+    document.body.appendChild(btn);
 
-  showNextText();
-  setInterval(showNextText, 5000); // ganti tiap 1.5 detik
+    btn.addEventListener("click", () => {
+      audio.play();
+      btn.remove();
+    });
+  });
+});
+</script>
 
-  // setelah 4.5 detik, sembunyikan loading
-  setTimeout(() => {
-    document.getElementById('loading-screen').style.display = 'none';
-  }, 15000);
-</script>
-</script>
 </body>
 </html>

@@ -1,305 +1,195 @@
-/* Body dan layout umum */
-body {
-    background-color: #222; /* warna gelap nyaman */
-    color: #fff;            /* teks putih */
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    line-height: 1.6;
-}
-
-/* Judul */
-h1 {
-    color: rgb(253, 4, 179);
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-/* Paragraf */
-p {
-    color: #ff00b3;
-    font-size: 1.2em;
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-}
-.musik-player button {
-    background: #ff5f9e;
-    color: rgb(247, 0, 210);
-    font-size: 1.1em;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 95, 158, 0.4);
-}
-
-.musik-player button:hover {
-    background: #ff2b7a;
-    transform: scale(1.05);
-}
-button {
-    background: #ff85a2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #ff4072;
-    transform: scale(1.05);
-}
-
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
-/* Gambar romantis */
-.foto-romantis {
-    width: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    box-shadow: 0 0 20px hotpink;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efek hover pada foto */
-.foto-romantis:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px deeppink;
-}
-
-/* Optional: buat teks responsive */
-@media (max-width: 600px) {
-    h1 { font-size: 1.5em; }
-    p { font-size: 1em; }
-    .foto-romantis { width: 200px; }
-}
-.heart {
-    position: fixed;
-    top: -10px;
-    font-size: 24px;
-    animation: fall linear forwards;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
-.heart {
-    position: fixed;
-    top: -10px;
-    font-size: 24px;
-    animation: fall linear forwards;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
-.heart {
-    position: fixed;
-    top: -10px;
-    font-size: 24px;
-    animation: fall linear forwards;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
-@keyframes naik {
-  from { transform: translateY(100vh); opacity: 1; }
-  to { transform: translateY(-10vh); opacity: 0; }
-}
-body {
-  background-image: url('gambar/latar.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-}
+/* 🌸 BODY & LAYOUT UMUM */
 body {
   background-image: url('gambar/background.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-
-#loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #ffd6e0, #ffeaf0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    overflow: hidden;
-}
-
-.kucing {
-    width: 200px;
-    animation: zoomIn 2s ease-in-out infinite alternate;
-}
-
-.love {
-    font-size: 35px;
-    opacity: 0;
-    animation: floatLove 2s ease-in-out infinite alternate;
-    margin-top: 10px;
-}
-
-.loading-text {
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #ff4f81;
-    font-size: 1.7rem;
-    opacity: 0;
-    animation: fadeText 2s ease-in-out infinite alternate;
-}
-
-@keyframes zoomIn {
-    0% { transform: scale(0.7); }
-    100% { transform: scale(1.1); }
-}
-
-@keyframes floatLove {
-    0% { transform: translateY(10px); opacity: 0; }
-    100% { transform: translateY(-20px); opacity: 1; }
-}
-
-@keyframes fadeText {
-    0% { opacity: 0.3; }
-    100% { opacity: 1; }
-}
-/* 🌸 Loading Screen Full Pink */
+/* 🌸 LOADING SCREEN */
 #loading-screen {
   position: fixed;
   inset: 0;
-  background: #ffcce5; /* pink lembut full background */
+  background: linear-gradient(135deg, #ffd6e0, #ffeaf0);
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   z-index: 9999;
+  overflow: hidden;
   transition: opacity 1s ease;
 }
 
+/* Saat loading di-hide */
 #loading-screen.hide {
   opacity: 0;
   pointer-events: none;
 }
 
 /* 🐱 Kucing animasi zoom */
-.loader .kucing {
+.kucing {
+  width: 200px;
+  border-radius: 20px;
+  animation: zoomIn 2s ease-in-out infinite alternate;
+}
+
+/* 💕 Love kecil di bawah kucing */
+.love {
+  font-size: 35px;
+  color: #ff4f81;
+  opacity: 0;
+  animation: floatLove 2s ease-in-out infinite alternate;
+  margin-top: 10px;
+}
+
+/* 🌷 Pesan loading bergantian */
+.loading-text span {
+  display: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff2b7a;
+  text-shadow: 0 0 10px #fff;
+}
+
+/* 💖 Efek love jatuh di layar */
+.love-floating {
+  position: fixed;
+  font-size: 1.5rem;
+  animation: fall 5s linear infinite;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+/* 💫 ANIMASI */
+@keyframes zoomIn {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1.1); }
+}
+
+@keyframes floatLove {
+  0% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(-20px); opacity: 1; }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* 🎵 Tombol Musik */
+.musik-player button {
+  background: #ff5f9e;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 95, 158, 0.4);
+}
+
+.musik-player button:hover {
+  background: #ff2b7a;
+  transform: scale(1.05);
+}
+
+/* 💌 Tombol Pesan Acak */
+button {
+  background: #ff85a2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff4072;
+  transform: scale(1.05);
+}
+
+/* ❤️ Judul & Paragraf */
+h1 {
+  color: rgb(253, 4, 179);
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #ff00b3;
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+/* 📸 Gambar Romantis */
+.foto-romantis {
+  width: 250px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px hotpink;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover foto */
+.foto-romantis:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px deeppink;
+}
+
+/* 📱 Responsif */
+@media (max-width: 600px) {
+  h1 { font-size: 1.5em; }
+  p { font-size: 1em; }
+  .foto-romantis { width: 200px; }
+}
+/* 🌸 Loading Screen */
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #ffcce5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+/* 🐱 Kucing animasi zoom */
+.kucing {
   width: 160px;
   animation: zoomIn 1.5s ease-in-out infinite alternate;
 }
 
-/* Efek zoom lembut */
 @keyframes zoomIn {
-  from {
-    transform: scale(0.9);
-  }
-  to {
-    transform: scale(1.1);
-  }
+  from { transform: scale(0.9); }
+  to { transform: scale(1.1); }
 }
 
-/* 💕 Love kecil yang bergetar */
 .love {
   font-size: 2rem;
-  animation: float 1.5s ease-in-out infinite alternate;
   color: #ff5ca8;
+  animation: float 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes float {
@@ -313,31 +203,22 @@ body {
   color: #ff4d94;
   font-size: 1.3rem;
   font-weight: bold;
-  letter-spacing: 1px;
   text-shadow: 0 0 5px #fff;
 }
 
-body.loaded #loading-screen {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-/* efek love di atas loading */
-.love-floating {
+/* 💖 Love rain setelah loading */
+.heart {
   position: fixed;
-  font-size: 1.5rem;
-  animation: fall 5s linear infinite;
+  top: -10px;
+  font-size: 24px;
+  animation: fall linear forwards;
   pointer-events: none;
-  z-index: 10000; /* di atas loading screen */
+  z-index: 1;
 }
 
 @keyframes fall {
-  0% {
-    transform: translateY(-10vh) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(110vh) rotate(360deg);
+  to {
+    transform: translateY(100vh);
     opacity: 0;
   }
 }
